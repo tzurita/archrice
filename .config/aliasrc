@@ -1,0 +1,61 @@
+#!/bin/sh
+
+# Use neovim for vim if present.
+command -v nvim >/dev/null && alias vim="nvim" vi="nvim" vimdiff="nvim -d"
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv" \
+	yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner"
+
+# Colorize commands when possible.
+alias \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi" \
+        la="colorls -lA --sd" \
+        ls="colorls -l --sd"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+        br="lsof +c0 -n 2> /dev/null | grep 'DEL.*lib' | awk '{print \$1}' | sort -u" \
+	ka="killall" \
+	g="git" \
+	trem="transmission-remote" \
+	YT="youtube-viewer" \
+	sdn="sudo shutdown -h now" \
+	f="$FILE" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	p="sudo pacman" \
+	xi="sudo xbps-install" \
+	xr="sudo xbps-remove -R" \
+	xq="xbps-query" \
+	z="zathura"
+
+# Some other stuff
+alias \
+	magit="nvim -c MagitOnly" \
+	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
+	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
+	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf" \
+        mbsync="mbsync -c ${XDG_CONFIG_HOME:-$HOME/.config}/isync/mbsyncrc" \
+        weechat="weechat -d $XDG_CONFIG_HOME/weechat"
+
+# Work stuff
+alias \
+        apl="ansible-playbook" \
+        azcli="docker run -it -v ${HOME}/.ssh:/root/.ssh mcr.microsoft.com/azure-cli" \
+        cdsi="cd ~/git/si-ansible" \
+        cpa="scp si-satellite.si.edu:/etc/ansible/hosts . ; sudo cp hosts /etc/ansible/hosts ; rm hosts" \
+        gpa='find ~ -name ".git" -type d -exec bash -c "echo '{}' && cd '{}'/.. && git pull" \;' \
+        rvim="sudo nvim" \
+        sat="ssh si-satellite" \
+        swork="ssh work"
+
+vf() { fzf | xargs -r -I % $EDITOR % ;}

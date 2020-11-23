@@ -1,0 +1,37 @@
+http://lukesmith.xyz/rss.xml
+https://notrelated.libsyn.com/rss
+https://www.archlinux.org/feeds/news/ "tech"
+http://theatomheart.net/index.xml "tech"
+http://feeds.arstechnica.com/arstechnica/index "tech"
+http://feeds.reuters.com/reuters/technologyNews "~Reuters Tech" "tech" "news"
+http://feeds.reuters.com/Reuters/PoliticsNews "~Reuters Politics" "news"
+http://feeds.reuters.com/Reuters/worldNews "~Reuters World News" "news"
+http://feeds.wired.com/wired/index "~Wired Top Stories" "tech" "news"
+https://www.networkworld.com/index.rss "tech"
+https://lifehacker.com/rss "tech"
+http://news.ycombinator.com/rss "tech"
+
+# YouTube Feeds
+https://www.youtube.com/feeds/videos.xml?channel_id=UCwUizOU8pPWXdXNniXypQEQ "~(YT) Awaken With JP" "yt" "funsies"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCrTNhL_yO3tPTdQ5XgmmWjA "~(YT) RedLetterMedia" "yt" "funsies"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCHCph-_jLba_9atyCZJPLQQ "~(YT) How It Should Have Ended" "yt" "funsies"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCOpcACMWblDls9Z6GERVi1A "~(YT) Honest Trailers" "yt" "funsies"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7v3-2K1N84V67IF-WTRG-Q "~(YT) Jeremy Jahns" "yt" "funsies"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~(YT) Luke Smith" "yt" "tech"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJ6q9Ie29ajGqKApbLqfBOg "~(YT) Black Hat" "yt" "tech"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJItQmwUrcW4VdUqWaRUNIg "~(YT) DemmSec" "yt" "tech"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCW6xlqxSY3gGur4PkGPEUeA "~(YT) Seytonic" "yt" "tech"
+https://www.youtube.com/feeds/videos.xml?channel_id=UClG-tWFFA54wul9Rd8GpC5Q "~(YT) Anoop V" "yt" "tech"
+
+# Reddit Feeds
+https://www.reddit.com/r/networking/.rss "~(/r) Networking" "tech" "reddit"
+https://www.reddit.com/r/linux/.rss "~(/r) Linux" "tech" "reddit"
+https://www.reddit.com/r/i3wm/.rss "~(/r) I3WM" "tech" "reddit"
+https://www.reddit.com/r/linuxadmin/.rss "~(/r) LinuxAdmin" "tech" "reddit"
+https://www.reddit.com/r/archlinux/.rss "~(/r) ArchLinux" "tech" "reddit"
+https://www.reddit.com/r/raspberry_pi/.rss "~(/r) Raspberry Pi" "tech" "reddit"
+https://www.reddit.com/r/bash/.rss "~(/r) Bash" "tech" "reddit"
+https://www.reddit.com/r/vim/.rss "~(/r) Vim" "tech" "reddit"
+https://www.reddit.com/r/Documentaries/.rss "~(/r) Documentaries" "funsies" "reddit"
+https://www.reddit.com/r/InternetIsBeautiful/.rss "~(/r) Internet Is Beautiful" "funsies" "reddit"
