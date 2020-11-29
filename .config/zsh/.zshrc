@@ -10,7 +10,7 @@ ZSH_THEME="random"
 
 # TMUX
 # Automatically start tmux
-ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=false
 
 # Automatically connect to a previous session if it exists
 ZSH_TMUX_AUTOCONNECT=false
@@ -38,7 +38,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=23'
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(tmux git node vi-mode zsh-syntax-highlighting zsh-autosuggestions)
 
-# Advanced Tab completion
+# Basic auto/tab completion
 autoload -U compinit
 compinit
 zstyle ':completion:*' menu select
@@ -146,15 +146,14 @@ source $ZSH/oh-my-zsh.sh
 #stty -ixon # Disable ctrl-s and ctrl-q.
 
 # History in cache directory:
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=10000000
+SAVEHIST=10000000
 HISTFILE=~/.cache/zsh/history
 
-
 # Load aliases and shortcuts if existent.
-[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc"
-[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc"
-[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc"
 
 # Use lf to switch directories and bind it to ctrl-o
 lfcd () {
@@ -167,11 +166,8 @@ lfcd () {
     fi
 }
 bindkey -s '^o' 'lfcd\n'
-
-bindkey -s '^a' 'bc -l\n'
-
+bindkey -s '^a' 'bc -lq\n'
 bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
-
 bindkey '^[[P' delete-char
 
 # Edit line in vim with ctrl-e:

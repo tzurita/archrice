@@ -1,15 +1,12 @@
-# The Archrice (Tom Zurita <https://tomzurita.com>'s dotfiles)
+# The Archrice (Tom Zurita's dotfiles)
 
-These are the dotfiles deployed by [TARBS](https://tomzurita.com)
+These are the dotfiles deployed by [TARBS](https://github.com/tzurita/archrice) 
 
 - Very useful scripts are in `~/.local/bin/`
 - Settings for:
 	- vim/nvim (text editor)
 	- zsh (shell)
-	- i3wm/i3-gaps (window manager)
-	- i3blocks (status bar)
 	- sxhkd (general key binder)
-	- ranger (file manager)
 	- lf (file manager)
 	- mpd/ncmpcpp (music)
 	- sxiv (image/gif viewer)
@@ -24,23 +21,28 @@ These are the dotfiles deployed by [TARBS](https://tomzurita.com)
 	- File bookmarks in `~/.config/files`
 	- Directory bookmarks in `~/.config/directories`
 
-## Want even more?
+## Usage
 
-My setup is pretty modular nowadays.
-I use several suckless programs that are meant to be configured and compiled by the user and I also have separate repos for some other things.
-Check out their links:
+These dotfiles are intended to go with numerous suckless programs I use:
 
-- [dwm](https://github.com/lukesmithxyz/dwm) (the window manager I usually use now which is fully compatible with this repo)
-- [st](https://github.com/lukesmithxyz/st) (the terminal emulator assumed to be used by these dotfiles)
-- [mutt-wizard (`mw`)](https://github.com/lukesmithxyz/mutt-wizard) - (a terminal-based email system that can store your mail offline without effort)
+- [dwm](https://github.com/tomzurita/dwm) (window manager)
+- [dwmblocks](https://github.com/lukesmithxyz/dwmblocks) (statusbar)
+- [st](https://github.com/lukesmithxyz/st) (terminal emulator)
 
-## Install these dotfiles
+I also recommend trying out
+[mutt-wizard](https://github.com/lukesmithxyz/mutt-wizard), which additionally
+works with this setup. It gives you an easy-to-install terminal-based email
+client regardless of your email provider. It is integrated into these dotfiles
+as well.
 
-Use [TARBS](https://tomzurita.com) to autoinstall everything:
+## Install these dotfiles and all dependencies
+
+Use [TARBS](https://github.com/tzurita/TARBS) to autoinstall everything:
 
 ```
-curl -LO raw.githubusercontent.com/tzurita/TARBS/master/tarbs.sh
-
+curl -LO raw.github.com/tzurita/TARBS/master/archrice/tarbs.sh
+sh tarbs.sh
 ```
 
-or clone the repo files directly to your home directory and install [the prerequisite programs](https://github.com/tzurita/TARBS/blob/master/progs.csv) or [those required for the i3 setup](https://github.com/tzurita/TARBS/blob/master/legacy.csv).
+or clone the repo files directly to your home directory and install the
+[dependencies](https://github.com/LukeSmithxyz/LARBS/blob/master/progs.csv).
