@@ -23,7 +23,7 @@ alias \
 
 # These common commands are just too long! Abbreviate them.
 alias \
-        br="lsof +c 0 | grep -w DEL | awk '{print \$1}' | sort -u" \
+        br="sudo lsof +c 0 | grep -w 'DEL.*lib' | awk '{print \$1}' | sort -u" \
 	ka="killall" \
 	g="git" \
 	trem="transmission-remote" \
