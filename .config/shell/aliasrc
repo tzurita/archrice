@@ -18,8 +18,8 @@ alias \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
-        la="colorls -lA --sd" \
-        ls="colorls -l --sd"
+        la="colorls -hAltr --sd" \
+        ls="colorls -hltr --sd"
 
 # These common commands are just too long! Abbreviate them.
 alias \
