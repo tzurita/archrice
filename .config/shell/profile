@@ -6,7 +6,7 @@
 # to clean up.
 
 # Adds `~/.local/bin` to $PATH
-export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':')":$HOME/.local/share/npm/bin
+export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}":$HOME/.local/share/npm/bin
 
 unsetopt PROMPT_SP
 
