@@ -224,7 +224,19 @@ let g:signify_sign_delete = '-'
 " === VimWiki - Ensure files are read as what I want === "
 let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown','.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 map <leader>v :VimwikiIndex
-let g:vimwiki_list = [{'path': '~/.local/vimwiki/content', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{
+  \ 'auto_export': 1,
+  \ 'automatic_nested_syntaxes':1,
+  \ 'path_html': '$HOME/.local/vimwiki/public',
+  \ 'path': '$HOME/.local/vimwiki/content',
+  \ 'template_path': '$HOME/.local/vimwiki/templates/',
+  \ 'syntax': 'markdown',
+  \ 'ext':'.md',
+  \ 'template_default':'markdown',
+  \ 'custom_wiki2html': '$HOME/.local/bin/wiki2html.sh',
+  \ 'template_ext':'.html'
+  \}]
+let g:vimwiki_table_mappings = 0
 autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
 autocmd BufRead,BufNewFile *.tex set filetype=tex
