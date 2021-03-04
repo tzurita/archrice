@@ -410,10 +410,6 @@ nmap <leader>z :JsDoc<CR>
 " Vim's default buffer
 vnoremap <leader>p "_dP
 
-" Remove trailing spaces
-nnoremap <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
-
-
 " ============================================================================ "
 " ===                                 MISC.                                === "
 " ============================================================================ "
