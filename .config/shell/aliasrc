@@ -58,6 +58,7 @@ alias \
 alias \
         apl="ansible-playbook" \
         azcli="docker run -it -v ${HOME}/.ssh:/root/.ssh mcr.microsoft.com/azure-cli" \
+        cdg="cd ~/.local/git" \
         cdsi="cd ~/.local/git/si-ansible" \
         cpa="scp si-satellite.si.edu:/etc/ansible/hosts . ; sudo cp hosts /etc/ansible/hosts ; rm hosts" \
         gpa='find ~ -name ".git" -type d -exec bash -c "echo '{}' && cd '{}'/.. && git pull" \;' \
