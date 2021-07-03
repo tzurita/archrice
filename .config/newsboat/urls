@@ -10,6 +10,9 @@ http://feeds.wired.com/wired/index "~Wired Top Stories" "tech" "news"
 https://www.networkworld.com/index.rss "tech"
 https://lifehacker.com/rss "tech"
 http://news.ycombinator.com/rss "tech"
+https://landchad.net/rss.xml
+http://based.cooking/rss.xml
+https://www.archlinux.org/feeds/news/ "tech"
 
 # YouTube Feeds
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~(YT) Luke Smith" "yt" "tech"
